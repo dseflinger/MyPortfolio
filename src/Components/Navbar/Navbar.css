@@ -1,3 +1,29 @@
-.navbar{
-    
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    /*TODO maybe add variables file for font sizes*/
+}
+
+.nav-connect {
+    padding: 20px 40px;
+    border-radius: 60px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    /*todo make this different*/
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
 }
