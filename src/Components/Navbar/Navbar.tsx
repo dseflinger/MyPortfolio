@@ -14,9 +14,8 @@ const Navbar = () => {
                 <li><AnchorLink href='#home' offset={offset}><p onClick={() => setMenu("home")}>Home</p></AnchorLink></li>
                 <li><AnchorLink href='#about' offset={offset}><p onClick={() => setMenu("about")}>About Me</p></AnchorLink></li>
                 <li><AnchorLink href="#portfolio" offset={offset}><p onClick={() => setMenu("portfolio")}>Portfolio</p></AnchorLink></li>
-                <li className='nav-connect primary-button'><AnchorLink href="#contact" offset={offset}><p onClick={() => setMenu("contact")}>Contact Me</p></AnchorLink></li>
+                <li ><AnchorLink className='nav-connect primary-button' href="#contact" offset={offset}><p onClick={() => setMenu("contact")}>Contact Me</p></AnchorLink></li>
             </ul>
-            {/* <div className='nav-connect primary-button'><AnchorLink href="#contact" offset={offset}><p onClick={() => setMenu("contact")}>Connect With Me</p></AnchorLink></div> */}
         </div>
     )
 }
