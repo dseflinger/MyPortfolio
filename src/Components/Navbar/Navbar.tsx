@@ -8,6 +8,7 @@ const Navbar = () => {
 
     return (
         // todo maybe make a custom logo in photoshop
+        // todo dont need setMenu probably
         <div className='navbar'>
             <ul className='nav-menu'>
                 <li><AnchorLink href='#home' offset={offset}><p onClick={() => setMenu("home")}>Home</p></AnchorLink></li>
@@ -15,7 +16,7 @@ const Navbar = () => {
                 <li><AnchorLink href="#portfolio" offset={offset}><p onClick={() => setMenu("portfolio")}>Portfolio</p></AnchorLink></li>
                 <li><AnchorLink href="#contact" offset={offset}><p onClick={() => setMenu("contact")}>Contact</p></AnchorLink></li>
             </ul>
-            <div className='nav-connect'><AnchorLink href="#contact" offset={offset}><p onClick={() => setMenu("contact")}>Connect With Me</p></AnchorLink></div>
+            <div className='nav-connect primary-button'><AnchorLink href="#contact" offset={offset}><p onClick={() => setMenu("contact")}>Connect With Me</p></AnchorLink></div>
         </div>
     )
 }

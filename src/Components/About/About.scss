@@ -1,0 +1,16 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    gap: 80px;
+    margin: 80px;
+
+    p {
+        width: 50%;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    // todo remove all comments
+}

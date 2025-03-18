@@ -2,7 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 170px;
+    padding: 16px 170px;
+    background: rgba(40, 40, 40, 0.95);
+    position: sticky;
+    top: 0;
 }
 
 .nav-menu {
@@ -27,10 +30,7 @@
 }
 
 .nav-connect {
-    padding: 20px 40px;
     border-radius: 60px;
-    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
-    /*todo make this different*/
     font-size: 22px;
     cursor: pointer;
     transition: 0.5s;
