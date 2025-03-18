@@ -12,12 +12,16 @@
   "dependencies": {
     "node": "^20.19.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-dom": "^19.0.0",
+    "sass": "^1.86.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@types/react": "^19.0.10",
+    "@types/react-anchor-link-smooth-scroll": "^1.0.5",
     "@types/react-dom": "^19.0.4",
+    "@types/react-scroll": "^1.8.10",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",

@@ -1,19 +1,20 @@
 import React from 'react'
-import './Hero.css'
+import './Hero.scss'
 import me from '../../assets/me.svg'
 
 const Hero = () => {
     return (
-        <div className='hero'>
+        <div id='home' className='hero'>
             <img src={me} alt="" />
-            <h1>Hello, I'm <span className='name'>Daniel</span> a Software Developer</h1>
+            <h1>Hello, I'm <span className='name'>Daniel Seflinger</span> a Software Developer</h1>
             <p>I am a full-stack software developer with {yearsWorked} years of professional experience.
                 Based in Santa Monica, CA, I have a strong passion for web development, game development,
                 and mobile applications.</p>
+            {/* todo should i delete these?
             <div className="hero-action">
-                <div className="hero-connect">Connect with me</div>
-                <div className="hero-resume">My resume</div>
-            </div>
+                <div className="hero-connect">Connect With Me</div>
+                <div className="hero-resume">My Resume</div>
+            </div> */}
         </div>
     )
 }

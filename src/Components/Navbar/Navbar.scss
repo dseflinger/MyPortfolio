@@ -12,6 +12,18 @@
     gap: 60px;
     font-size: 20px;
     /*TODO maybe add variables file for font sizes*/
+
+    li {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
 }
 
 .nav-connect {
@@ -22,8 +34,23 @@
     font-size: 22px;
     cursor: pointer;
     transition: 0.5s;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .nav-connect:hover {
     transform: scale(1.05);
+}
+
+@media(max-width: 768px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+
+    .nav-connect {
+        display: none;
+    }
 }

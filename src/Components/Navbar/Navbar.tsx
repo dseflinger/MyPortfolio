@@ -1,19 +1,21 @@
-import React from 'react'
-import './Navbar.css'
+import React, { useState } from 'react'
+import './Navbar.scss'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Navbar = () => {
+    const [menu, setMenu] = useState("Home");
+    const offset = 50;
+
     return (
         // todo maybe make a custom logo in photoshop
         <div className='navbar'>
-            <h1>Daniel</h1>
             <ul className='nav-menu'>
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Services</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
+                <li><AnchorLink href='#home' offset={offset}><p onClick={() => setMenu("home")}>Home</p></AnchorLink></li>
+                <li><AnchorLink href='#about' offset={offset}><p onClick={() => setMenu("about")}>About Me</p></AnchorLink></li>
+                <li><AnchorLink href="#portfolio" offset={offset}><p onClick={() => setMenu("portfolio")}>Portfolio</p></AnchorLink></li>
+                <li><AnchorLink href="#contact" offset={offset}><p onClick={() => setMenu("contact")}>Contact</p></AnchorLink></li>
             </ul>
-            <div className='nav-connect'>Connect With Me</div>
+            <div className='nav-connect'><AnchorLink href="#contact" offset={offset}><p onClick={() => setMenu("contact")}>Connect With Me</p></AnchorLink></div>
         </div>
     )
 }
