@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Navbar = () => {
     const [menu, setMenu] = useState("Home");
-    const offset = 50;
+    const offset = 60;
 
     return (
         // todo maybe make a custom logo in photoshop
@@ -14,9 +14,9 @@ const Navbar = () => {
                 <li><AnchorLink href='#home' offset={offset}><p onClick={() => setMenu("home")}>Home</p></AnchorLink></li>
                 <li><AnchorLink href='#about' offset={offset}><p onClick={() => setMenu("about")}>About Me</p></AnchorLink></li>
                 <li><AnchorLink href="#portfolio" offset={offset}><p onClick={() => setMenu("portfolio")}>Portfolio</p></AnchorLink></li>
-                <li><AnchorLink href="#contact" offset={offset}><p onClick={() => setMenu("contact")}>Contact</p></AnchorLink></li>
+                <li className='nav-connect primary-button'><AnchorLink href="#contact" offset={offset}><p onClick={() => setMenu("contact")}>Contact Me</p></AnchorLink></li>
             </ul>
-            <div className='nav-connect primary-button'><AnchorLink href="#contact" offset={offset}><p onClick={() => setMenu("contact")}>Connect With Me</p></AnchorLink></div>
+            {/* <div className='nav-connect primary-button'><AnchorLink href="#contact" offset={offset}><p onClick={() => setMenu("contact")}>Connect With Me</p></AnchorLink></div> */}
         </div>
     )
 }
