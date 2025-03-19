@@ -1,13 +1,14 @@
-import React from 'react'
 import './Contact.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHouse, faPhone } from '@fortawesome/free-solid-svg-icons';
-import ReactDOM from 'react-dom';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { useForm } from 'react-hook-form';
 
 const Contact = () => {
+    const { register, handleSubmit, formState: { errors } } = useForm();
+
     const onSubmit = async (event: any) => {
+        if (!validateForm()) return;
         event.preventDefault();
         const formData = new FormData(event.target);
 
@@ -31,6 +32,10 @@ const Contact = () => {
         }
     };
 
+    const validateForm = () => {
+        throw new Error('Function not implemented.');
+    }
+
     return (
         <div id='contact' className='contact'>
             <h2 className='section-heading'>Contact</h2>
@@ -41,7 +46,6 @@ const Contact = () => {
                     <p>I'm currently seeking new opportunities!
                         Have a question or want to collaborate?
                         Drop your details below, and I'll get back to you soon.</p>
-                    {/* todo add icons and make links clickable */}
                     <div className="contact-details">
 
                         <div className="contact-detail">
@@ -59,10 +63,28 @@ const Contact = () => {
                     </div>
                 </div>
                 {/* todo add validation */}
-                <form className="contact-right" onSubmit={onSubmit}>
-                    <input type='text' placeholder='Name' name='name' />
-                    <input type='email' placeholder='Email' name='email' />
-                    <textarea name='message' rows={8} placeholder='Message' />
+                <form className="contact-right" onSubmit={handleSubmit(onSubmit)}>
+                    <div className='form-group'>
+                        <input {...register('name', { required: 'Name is required' })}
+                            type='text' placeholder='Name' name='name' />
+                        <p className={`error ${errors?.name ? 'active' : ''}`}>{errors?.name?.message as string}</p>
+                    </div>
+                    <div className='form-group'>
+                        <input {...register('email', {
+                            required: 'Email is required',
+                            pattern: {
+                                value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                                message: 'Invalid email address',
+                            }
+                        })}
+                            type='email' placeholder='Email' name='email' />
+                        <p className={`error ${errors?.email ? 'active' : ''}`}>{errors?.email?.message as string}</p>
+                    </div>
+                    <div className='form-group'>
+                        <textarea {...register('message', { required: 'Message is required' })}
+                            name='message' rows={8} placeholder='Message' />
+                        <p className={`error ${errors?.message ? 'active' : ''}`}>{errors?.message?.message as string}</p>
+                    </div>
                     <button type='submit' className="submit primary-button">Submit</button>
                 </form>
             </div>
