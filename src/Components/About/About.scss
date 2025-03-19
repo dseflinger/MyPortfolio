@@ -14,3 +14,15 @@
 
     // todo remove all comments
 }
+
+@media(max-width: 768px) {
+
+    .about {
+        margin: 50px 0px;
+    }
+
+    .about p {
+        width: 60%;
+        font-size: 18px;
+    }
+}

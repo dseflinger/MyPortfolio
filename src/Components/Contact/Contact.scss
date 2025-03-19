@@ -58,16 +58,29 @@
             align-items: start;
             gap: 16px;
 
-            input {
-                border: none;
+            .form-group {
                 width: 700px;
+            }
+
+            input {
                 height: 50px;
-                padding-left: 20px;
+                padding: 0px 20px;
+            }
+
+            textarea {
+                padding: 20px;
+            }
+
+            input,
+            textarea {
+                border: none;
+                width: 100%;
                 border-radius: 4px;
                 background: #32323c;
                 color: #a0a0a0;
                 font-size: 20px;
                 margin-bottom: 4px;
+                box-sizing: border-box;
             }
 
             .error {
@@ -102,16 +115,6 @@
                 transition: 0.2s ease all;
             }
 
-            textarea {
-                width: 650px;
-                border: none;
-                padding: 25px;
-                border-radius: 4px;
-                background: #32323c;
-                color: #a0a0a0;
-                font-size: 20px;
-            }
-
             .submit {
                 border: none;
                 color: white;
@@ -125,6 +128,57 @@
             .submit:hover {
                 transform: scale(1.1);
                 transition: 0.3s;
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .contact-section {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 768px) {
+    .contact {
+        gap: 50px;
+        margin: 50px 70px;
+
+        .contact-title {
+
+            h1 {
+                font-size: 50px;
+                padding: 0;
+            }
+        }
+
+        .contact-section {
+            flex-direction: column;
+
+            .contact-left {
+                align-items: center;
+
+                h1 {
+                    font-size: 50px;
+                }
+
+                p {
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+
+            .contact-right {
+                align-items: center;
+
+                .form-group {
+                    width: 75%;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                }
             }
         }
     }

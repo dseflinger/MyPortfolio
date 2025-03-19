@@ -37,7 +37,7 @@ const Contact = () => {
     }
 
     return (
-        <div id='contact' className='contact'>
+        <div id='contact' className='contact section'>
             <h2 className='section-heading'>Contact</h2>
 
             <div className="contact-section">
@@ -62,7 +62,6 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                {/* todo add validation */}
                 <form className="contact-right" onSubmit={handleSubmit(onSubmit)}>
                     <div className='form-group'>
                         <input {...register('name', { required: 'Name is required' })}
