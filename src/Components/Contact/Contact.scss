@@ -134,8 +134,9 @@
 }
 
 @media(max-width: 1200px) {
-    .contact-section {
+    .contact .contact-section {
         flex-direction: column;
+        gap: 50px;
     }
 }
 
@@ -154,6 +155,7 @@
 
         .contact-section {
             flex-direction: column;
+            gap: 50px;
 
             .contact-left {
                 align-items: center;

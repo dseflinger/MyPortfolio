@@ -10,12 +10,12 @@ const Navbar = () => {
     const menuRef = useRef<HTMLUListElement>(null);
     const openMenu = () => {
         if (menuRef.current) {
-            menuRef.current.style.right = "0";
+            menuRef.current.style.left = "0";
         }
     }
     const closeMenu = () => {
         if (menuRef.current) {
-            menuRef.current.style.right = "-350px";
+            menuRef.current.style.left = "-100%";
         }
     }
 
@@ -27,11 +27,11 @@ const Navbar = () => {
             <FontAwesomeIcon onClick={openMenu} className='nav-mob-open' icon={faBars} />
             <ul ref={menuRef} className='nav-menu'>
                 <FontAwesomeIcon onClick={closeMenu} className='nav-mob-close' icon={faX} />
-                <li><AnchorLink href='#home' offset={offset}><p onClick={() => setMenu("home")}>Home</p></AnchorLink></li>
-                <li><AnchorLink href='#about' offset={offset}><p onClick={() => setMenu("about")}>About Me</p></AnchorLink></li>
+                <li><AnchorLink href='#home' offset={offset}><p onClick={closeMenu}>Home</p></AnchorLink></li>
+                <li><AnchorLink href='#about' offset={offset}><p onClick={closeMenu}>About Me</p></AnchorLink></li>
                 {/*todo uncomment when this exists <li><AnchorLink href="#portfolio" offset={offset}><p onClick={() => setMenu("portfolio")}>Portfolio</p></AnchorLink></li> */}
-                <li className='nav-contact'><AnchorLink href="#contact" offset={offset}><p onClick={() => setMenu("contact")}>Contact</p></AnchorLink></li>
-                <li ><AnchorLink className='nav-connect primary-button' href="#contact" offset={offset}><p onClick={() => setMenu("contact")}>Contact Me</p></AnchorLink></li>
+                <li className='nav-contact'><AnchorLink href="#contact" offset={offset}><p onClick={closeMenu}>Contact</p></AnchorLink></li>
+                <li ><AnchorLink className='nav-connect primary-button' href="#contact" offset={offset}><p onClick={closeMenu}>Contact Me</p></AnchorLink></li>
             </ul>
         </div>
     )
