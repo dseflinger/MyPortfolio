@@ -1,0 +1,88 @@
+.professional-experience {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    gap: 24px;
+    gap: 80px;
+    margin: 80px;
+
+    .resume-link {
+        margin-top: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #e63946;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .experience-section {
+        padding: 0px 20px;
+        background-color: #f9f9f9;
+    }
+
+    .experience-section h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .experience-card {
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        padding: 0px 30px;
+        max-width: 700px;
+    }
+
+    .experience-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 8px;
+    }
+
+    .experience-title {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+
+    .experience-card ul {
+        list-style: disc inside;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .experience-card li {
+        margin-bottom: 12px;
+        line-height: 1.6;
+    }
+
+
+
+    .action-buttons {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        font-weight: 500px;
+        margin-bottom: 50px;
+    }
+
+    .my-resume {
+        padding: 25px 45px;
+        border-radius: 50px;
+        background: linear-gradient(135deg, #E63946 0%, #9B2226 100%);
+        padding: 16px 32px;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        display: block;
+        transition: 0.2s ease all;
+    }
+
+    .my-resume:hover {
+        transform: scale(1.05);
+        transition: 0.2s ease all;
+    }
+
+}
