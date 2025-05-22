@@ -28,7 +28,7 @@
             color: white;
         }
 
-        a:hover {
+        a:hover:not(.primary-button) {
             color: #E63946;
         }
     }
