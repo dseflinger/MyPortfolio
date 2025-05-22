@@ -58,7 +58,7 @@ const Contact = () => {
                         </div>
                         <div className="contact-detail">
                             <FontAwesomeIcon icon={faLinkedin} />
-                            <a href='https://www.linkedin.com/in/danielseflinger/'>linkedin.com/in/danielseflinger</a>
+                            <a href='https://www.linkedin.com/in/danielseflinger/' target="_blank" rel="noopener noreferrer">linkedin.com/in/danielseflinger</a>
                         </div>
                     </div>
                 </div>

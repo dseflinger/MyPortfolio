@@ -43,8 +43,12 @@
     // border-radius: 3px;
 }
 
-// @media (max-width: 1200px) {
-//     .section-heading {
-//         margin-bottom: 10rem;
-//     }
-// }
+@media (max-width: 768px) {
+    .section {
+        margin: 0 !important;
+    }
+
+    .section-heading {
+        margin: 0 70px;
+    }
+}

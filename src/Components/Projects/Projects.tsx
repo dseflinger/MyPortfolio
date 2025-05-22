@@ -12,7 +12,7 @@ const gitHubLinks = {
 
 const Projects = () => {
     return (
-        <div id="projects" className="projects">
+        <div id="projects" className="projects section">
             <h2 className="section-heading">Projects</h2>
             <div className="project-card">
                 <img
