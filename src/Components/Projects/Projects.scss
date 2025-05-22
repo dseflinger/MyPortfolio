@@ -37,11 +37,6 @@
         max-width: 850px;
         border-radius: 8px;
         object-fit: contain;
-        transition: transform 0.3s ease;
-
-        &:hover {
-            transform: scale(1.05);
-        }
     }
 
     .project-info {

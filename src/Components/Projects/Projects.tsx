@@ -23,7 +23,7 @@ const Projects = () => {
                 <div className="project-info">
                     <h3>Box Office Performance App</h3>
                     <p>
-                        A Django/PostgreSQL/Tailwind CSS app that queries and displays box office performance for a given date.
+                        A Django/PostgreSQL/Tailwind CSS web app that queries and displays box office performance for a given date.
                     </p>
                     <div className="github-link">
                         <FontAwesomeIcon icon={faGithub} className="github-icon" />
@@ -42,7 +42,7 @@ const Projects = () => {
                 <div className="project-info">
                     <h3>PersonaBot</h3>
                     <p>
-                        A React/Next.js/Tailwind CSS incorporating OpenAI's api to chat with a bard, a pirate, or a wizard.
+                        A React/Next.js/Tailwind CSS web app incorporating OpenAI's api to chat with a bard, a pirate, or a wizard.
                     </p>
                     <div className="github-link">
                         <FontAwesomeIcon icon={faGithub} className="github-icon" />
