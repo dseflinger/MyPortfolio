@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px;
 
     .contact-title {
         position: relative;
@@ -153,7 +152,6 @@
 @media(max-width: 768px) {
     .contact {
         gap: 50px;
-        margin: 50px 70px;
 
         .contact-title {
 
@@ -184,7 +182,7 @@
                 align-items: center;
 
                 .form-group {
-                    width: 75%;
+                    width: 100%;
                 }
 
                 input,

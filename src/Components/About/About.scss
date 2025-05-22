@@ -4,7 +4,6 @@
     justify-self: center;
     flex-direction: column;
     gap: 80px;
-    margin: 80px;
 
     p {
         width: 50%;
@@ -16,12 +15,8 @@
 }
 
 @media(max-width: 768px) {
-    .about {
-        margin: 50px 0px !important;
-    }
-
     .about p {
-        width: 80%;
+        width: 100%;
         font-size: 18px;
     }
 }
