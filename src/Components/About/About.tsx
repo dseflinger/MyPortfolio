@@ -5,6 +5,7 @@ var timeDiff = new Date().getTime() - new Date("2018-07-20").getTime();
 const yearsWorked = Math.floor(timeDiff / (1000 * 3600 * 24 * 365.25));
 
 const About = () => {
+    // todo update about me
     return (
         <div id='about' className='about'>
             <h2 className='section-heading'>About Me</h2>
