@@ -1,13 +1,10 @@
 .primary-button {
     background: linear-gradient(135deg, #E63946 0%, #9B2226 100%);
-    // background: linear-gradient(270deg, #df8908 50.41%, #B415ff 90.25%); // hid
-    // background: linear-gradient(270deg, #FF7F50 50%, #FF4500 100%);
     padding: 16px 32px;
 }
 
 .gradient-text {
     background: linear-gradient(135deg, #F55A5A 0%, #D62828 100%);
-    // background: linear-gradient(270deg, #FF7F50 50%, #FF4500 100%);
 
     background-clip: text;
     color: transparent;
@@ -39,7 +36,6 @@
     border-radius: 3px;
 
 
-    // todo is this better? (shifted to right)
     // content: "";
     // position: absolute;
     // left: 36px;

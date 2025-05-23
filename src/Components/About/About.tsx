@@ -5,13 +5,14 @@ var timeDiff = new Date().getTime() - new Date("2018-07-20").getTime();
 const yearsWorked = Math.floor(timeDiff / (1000 * 3600 * 24 * 365.25));
 
 const About = () => {
-    // todo update about me
     return (
         <div id='about' className='about section'>
             <h2 className='section-heading'>About Me</h2>
-            <p>I am a full-stack software developer with {yearsWorked} years of professional experience.
-                Based in Santa Monica, CA, I have a strong passion for web development, game development,
-                and mobile applications.</p>
+            <p>I’m a full stack software developer with {yearsWorked} years of professional experience,
+                based in Santa Monica, CA. I’ve built scalable single page applications and optimized performance
+                across web platforms. Professionally, I’ve worked with Angular, TypeScript, .NET (C#), and various
+                databases, and I also have project experience with Python, Django, React, and Next.js.
+                I’m passionate about mentoring, pair programming, and continuously improving system efficiency</p>
         </div>
     )
 }

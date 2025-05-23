@@ -1,4 +1,3 @@
-import React from 'react';
 import './Projects.scss';
 import boxOfficeAppAnimation from '../../assets/BoxOfficeAppAnimation.gif';
 import personaBotAnimation from '../../assets/PersonaBotAnimation.gif';
@@ -21,7 +20,7 @@ const Projects = () => {
                     className="project-image"
                 />
                 <div className="project-info">
-                    <h3>Box Office Performance App</h3>
+                    <h3>BoxOfficeApp</h3>
                     <p>
                         A Django/PostgreSQL/Tailwind CSS web app that queries and displays box office performance for a given date.
                     </p>

@@ -27,7 +27,6 @@ const Contact = () => {
         }).then((res) => res.json());
 
         if (res.success) {
-            //todo add toast here or something instead
             console.log("Success", res);
         }
     };

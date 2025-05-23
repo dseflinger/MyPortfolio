@@ -20,9 +20,6 @@ const Navbar = () => {
     }
 
     return (
-        // todo maybe make a custom logo in photoshop
-        // todo dont need setMenu probably
-        // todo fix nav drawer so it opens 60-80% out
         <div className='navbar'>
             <FontAwesomeIcon onClick={openMenu} className='nav-mob-open' icon={faBars} />
             <ul ref={menuRef} className='nav-menu'>
