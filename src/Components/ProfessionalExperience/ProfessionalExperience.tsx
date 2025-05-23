@@ -1,4 +1,5 @@
 import './ProfessionalExperience.scss'
+import my_resume from "../../assets/Daniel Seflinger's Resume.pdf"
 
 const ProfessionalExperience = () => {
     return (
@@ -25,9 +26,7 @@ const ProfessionalExperience = () => {
             </div>
 
             <div className="action-buttons">
-                {/* <div className="hero-connect">Connect With Me</div>
-                <div className="hero-resume">My Resume</div> */}
-                <a className="my-resume" href="/Danny-Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a className="my-resume" href={my_resume} target="_blank" rel="noopener noreferrer">
                     View Full Resume
                 </a>
             </div>

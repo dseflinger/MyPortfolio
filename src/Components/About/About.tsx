@@ -1,4 +1,3 @@
-import React from 'react'
 import './About.scss'
 
 var timeDiff = new Date().getTime() - new Date("2018-07-20").getTime();

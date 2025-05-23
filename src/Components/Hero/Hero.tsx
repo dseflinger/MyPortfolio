@@ -1,4 +1,3 @@
-import React from 'react'
 import './Hero.scss'
 import me from '../../assets/me.svg'
 

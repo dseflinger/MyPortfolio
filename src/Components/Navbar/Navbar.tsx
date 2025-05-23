@@ -1,11 +1,10 @@
-import React, { useRef, useState } from 'react'
+import { useRef } from 'react'
 import './Navbar.scss'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
-    const [menu, setMenu] = useState("Home");
     const offset = 60;
     const menuRef = useRef<HTMLUListElement>(null);
     const openMenu = () => {
