@@ -1,9 +1,7 @@
 .professional-experience {
     display: flex;
-    align-items: center;
     justify-self: center;
     flex-direction: column;
-    gap: 24px;
     gap: 80px;
 
     .resume-link {
@@ -62,6 +60,7 @@
     .action-buttons {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 24px;
         font-weight: 500px;
     }
