@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './Navbar.scss'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,16 +7,41 @@ import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 const Navbar = () => {
     const offset = 60;
     const menuRef = useRef<HTMLUListElement>(null);
+    const [drawerOpen, setDrawerOpen] = useState(false);
+
     const openMenu = () => {
         if (menuRef.current) {
             menuRef.current.style.left = "0";
+            setDrawerOpen(true);
         }
     }
     const closeMenu = () => {
         if (menuRef.current) {
             menuRef.current.style.left = "-100%";
+            setDrawerOpen(false);
         }
     }
+
+    useEffect(() => {
+        function handleClickOutside(event: any) {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                closeMenu();
+            }
+        }
+
+        if (drawerOpen) {
+            document.addEventListener('mousedown', handleClickOutside);
+            document.addEventListener('touchstart', handleClickOutside);
+        } else {
+            document.removeEventListener('mousedown', handleClickOutside);
+            document.removeEventListener('touchstart', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+            document.removeEventListener('touchstart', handleClickOutside);
+        };
+    }, [drawerOpen]);
 
     return (
         <div className='navbar'>

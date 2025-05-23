@@ -64,21 +64,6 @@
     display: none;
 }
 
-// @media(max-width: 768px) {
-
-//     li:last-child {
-//         display: none;
-//     }
-
-//     .nav-menu {
-//         font-size: 16px;
-//         gap: 24px;
-//         justify-content: space-evenly;
-//     }
-
-
-// }
-
 @media(max-width: 768px) {
     li:last-child {
         display: none;
@@ -101,9 +86,6 @@
 
     .nav-mob-open {
         display: block;
-        // position: fixed;
-        // left: 30px;
-        // top: 30px;
     }
 
     .nav-mob-close {
