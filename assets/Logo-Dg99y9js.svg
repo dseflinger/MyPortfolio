@@ -1,0 +1,18 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+	<title>New Project</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-606,-606,606,-606,559,73.5)">
+			<stop offset="-0.021" stop-color="#f55a5a"/>
+			<stop offset="0" stop-color="#f55a5a"/>
+			<stop offset="1" stop-color="#d62828"/>
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 660px;fill:  url(#g1);font-weight: 400;font-family: "Outfit-Regular", "Outfit" } 
+	</style>
+	<text id="D" style="transform: matrix(1,0,0,1,-6,469)" >
+		<tspan x="0" y="0" class="t0">D
+</tspan>
+	</text>
+</svg>
