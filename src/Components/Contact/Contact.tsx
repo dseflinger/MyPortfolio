@@ -3,19 +3,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
-    const onSubmit = async (event: any) => {
-        if (!validateForm()) return;
-        event.preventDefault();
-        const formData = new FormData(event.target);
+    const onSubmit = async (data: any) => {
+        const payload = {
+            ...data,
+            access_key: "92952b41-351c-45ea-88d1-6cdc1b43f4ab"
+        };
 
-        formData.append("access_key", "92952b41-351c-45ea-88d1-6cdc1b43f4ab");
-
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
+        const json = JSON.stringify(payload);
 
         const res = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -27,13 +26,12 @@ const Contact = () => {
         }).then((res) => res.json());
 
         if (res.success) {
-            console.log("Success", res);
+            toast.success("Message sent!");
+        }
+        else {
+            toast.error("Message failed.");
         }
     };
-
-    const validateForm = () => {
-        throw new Error('Function not implemented.');
-    }
 
     return (
         <div id='contact' className='contact section'>
@@ -64,7 +62,7 @@ const Contact = () => {
                 <form className="contact-right" onSubmit={handleSubmit(onSubmit)}>
                     <div className='form-group'>
                         <input {...register('name', { required: 'Name is required' })}
-                            type='text' placeholder='Name' name='name' />
+                            type='text' placeholder='Name' />
                         <p className={`error ${errors?.name ? 'active' : ''}`}>{errors?.name?.message as string}</p>
                     </div>
                     <div className='form-group'>
@@ -75,12 +73,12 @@ const Contact = () => {
                                 message: 'Invalid email address',
                             }
                         })}
-                            type='email' placeholder='Email' name='email' />
+                            type='email' placeholder='Email' />
                         <p className={`error ${errors?.email ? 'active' : ''}`}>{errors?.email?.message as string}</p>
                     </div>
                     <div className='form-group'>
                         <textarea {...register('message', { required: 'Message is required' })}
-                            name='message' rows={8} placeholder='Message' />
+                            rows={8} placeholder='Message' />
                         <p className={`error ${errors?.message ? 'active' : ''}`}>{errors?.message?.message as string}</p>
                     </div>
                     <button type='submit' className="submit primary-button">Submit</button>
