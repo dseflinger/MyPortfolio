@@ -27,12 +27,12 @@ const Navbar = () => {
             <FontAwesomeIcon onClick={openMenu} className='nav-mob-open' icon={faBars} />
             <ul ref={menuRef} className='nav-menu'>
                 <FontAwesomeIcon onClick={closeMenu} className='nav-mob-close' icon={faX} />
-                <li><AnchorLink href='#home' offset={offset}><p onClick={closeMenu}>Home</p></AnchorLink></li>
-                <li><AnchorLink href='#about' offset={offset}><p onClick={closeMenu}>About Me</p></AnchorLink></li>
-                <li><AnchorLink href="#professional-experience" offset={offset}><p onClick={closeMenu}>Professional Experience</p></AnchorLink></li>
-                <li><AnchorLink href="#projects" offset={offset}><p onClick={closeMenu}>Projects</p></AnchorLink></li>
-                <li className='nav-contact'><AnchorLink href="#contact" offset={offset}><p onClick={closeMenu}>Contact</p></AnchorLink></li>
-                <li ><AnchorLink className='nav-connect primary-button' href="#contact" offset={offset}><p onClick={closeMenu}>Contact Me</p></AnchorLink></li>
+                <li><AnchorLink href='#home' offset={offset}><span onClick={closeMenu}>Home</span></AnchorLink></li>
+                <li><AnchorLink href='#about' offset={offset}><span onClick={closeMenu}>About Me</span></AnchorLink></li>
+                <li><AnchorLink href="#professional-experience" offset={offset}><span onClick={closeMenu}>Professional Experience</span></AnchorLink></li>
+                <li><AnchorLink href="#projects" offset={offset}><span onClick={closeMenu}>Projects</span></AnchorLink></li>
+                <li className='nav-contact'><AnchorLink href="#contact" offset={offset}><span onClick={closeMenu}>Contact</span></AnchorLink></li>
+                <li ><AnchorLink className='nav-connect primary-button' href="#contact" offset={offset}><span onClick={closeMenu}>Contact Me</span></AnchorLink></li>
             </ul>
         </div>
     )
