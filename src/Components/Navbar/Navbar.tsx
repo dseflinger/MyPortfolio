@@ -24,9 +24,10 @@ const Navbar = () => {
             <ul ref={menuRef} className='nav-menu'>
                 <FontAwesomeIcon onClick={closeMenu} className='nav-mob-close' icon={faX} />
                 <li><AnchorLink href='#home' offset={offset}><span onClick={closeMenu}>Home</span></AnchorLink></li>
-                <li><AnchorLink href='#about' offset={offset}><span onClick={closeMenu}>About Me</span></AnchorLink></li>
-                <li><AnchorLink href="#professional-experience" offset={offset}><span onClick={closeMenu}>Professional Experience</span></AnchorLink></li>
+                <li><AnchorLink href='#about' offset={offset}><span onClick={closeMenu}>About</span></AnchorLink></li>
+                <li><AnchorLink href="#professional-experience" offset={offset}><span onClick={closeMenu}>Experience</span></AnchorLink></li>
                 <li><AnchorLink href="#projects" offset={offset}><span onClick={closeMenu}>Projects</span></AnchorLink></li>
+                <li><AnchorLink href="#contact" offset={offset}><span onClick={closeMenu}>Contact</span></AnchorLink></li>
                 <li className='nav-contact'><AnchorLink href="#contact" offset={offset}><span onClick={closeMenu}>Contact</span></AnchorLink></li>
                 <li ><AnchorLink className='nav-connect primary-button' href="#contact" offset={offset}><span onClick={closeMenu}>Contact Me</span></AnchorLink></li>
             </ul>

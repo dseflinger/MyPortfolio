@@ -21,7 +21,8 @@ body {
 }
 
 @media(max-width: 768px) {
-  body {
+
+  .page-container {
     padding: 0px 16px;
   }
 }
