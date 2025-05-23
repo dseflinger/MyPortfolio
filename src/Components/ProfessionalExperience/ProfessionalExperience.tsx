@@ -4,7 +4,7 @@ import my_resume from "../../assets/Daniel Seflinger's Resume.pdf"
 const ProfessionalExperience = () => {
     return (
         <div id='professional-experience' className='professional-experience section'>
-            <h2 className='section-heading'>Professional Experience</h2>
+            <h2 className='section-heading'>Experience</h2>
             <div className="experience-card">
                 <h3>R1 RCM – Santa Monica, CA (Remote)</h3>
                 <p className="experience-title">Software Engineer I → III (2020 – 2025)</p>
