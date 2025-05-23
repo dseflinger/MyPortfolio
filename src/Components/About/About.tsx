@@ -9,8 +9,8 @@ const About = () => {
             <h2 className='section-heading'>About</h2>
             <p>I’m a full stack software developer with {yearsWorked} years of professional experience,
                 based in Santa Monica, CA. I’ve built scalable single page applications and optimized performance
-                across web platforms. Professionally, I’ve worked with Angular, TypeScript, .NET (C#), and various
-                databases, and I also have project experience with Python, Django, React, and Next.js.
+                across web platforms. Professionally, I’ve worked with .NET (C#), Angular, TypeScript, and various
+                databases. I also have project experience with Python, Django, React, and Next.js.
                 I’m passionate about mentoring, pair programming, and continuously improving system efficiency</p>
         </div>
     )
