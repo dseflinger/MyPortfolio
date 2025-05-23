@@ -27,10 +27,13 @@
 
     .project-image {
         width: 100%;
-        flex-basis: 50%;
         max-width: 850px;
         border-radius: 8px;
         object-fit: contain;
+
+        @media (max-width: 850px) {
+            max-width: 100%;
+        }
     }
 
     .project-info {
@@ -38,8 +41,13 @@
         flex-direction: column;
         justify-content: center;
         gap: 24px;
-        max-width: 500px;
         text-align: left;
+
+        max-width: 500px;
+
+        @media (max-width: 500px) {
+            max-width: 100%;
+        }
 
         h3 {
             font-size: 32px;

@@ -5,12 +5,19 @@
   padding: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background: #1a1a1a;
   color: white;
   font-family: 'outfit';
   width: 100%;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 @media(max-width: 768px) {
